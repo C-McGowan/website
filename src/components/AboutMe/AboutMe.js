@@ -1,10 +1,13 @@
 import React from 'react';
 import { Paper, Typography, Box, Accordion } from '@material-ui/core';
 import AboutMeAccordion from '../AboutMeAccordion/AboutMeAccordion';
+import { useStyles } from './AboutMeStyles';
 
 export default function AboutMe(props) {
+    const classes = useStyles();
+
     return (
-        <Paper>
+        <Paper className={classes.root} id='about'>
             <Typography>
                 <Box fontSize="h4.fontSize">
                     About me

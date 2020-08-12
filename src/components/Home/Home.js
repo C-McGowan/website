@@ -1,9 +1,12 @@
 import React from 'react';
 import { Paper, Typography, Button, Box } from '@material-ui/core';
+import { useStyles } from './HomeStyles';
 
 export default function Home(props) {
+    const classes = useStyles();
+        
     return(
-        <Paper>
+        <Paper className={classes.root} id='home'>
             <Typography>
                 <Box fontSize="h5.fontSize">
                     Hi, my name is
